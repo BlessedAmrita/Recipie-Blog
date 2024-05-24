@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="text-gray-500 font-medi um font-comforta bg-gray-200 ">
+    <div class="sm:grid sm:grid-cols-3">
+        <!--content wrapper-->
+        <div class="col-span-1  bg-slate-300  sm:sticky top-0 sm:h-screen">
+            <!--Navbar div-->
+            <nav class="flex flex-col sm:items-end py-4 px-6 ">
+                <div>
+                    <h1
+                        class="uppercase tracking-wider font-semibold py-6 pl-4 text-yellow-800 border-b border-gray-100">
+                        <a href="#">Food Ninja</a>
+                    </h1>
+                </div>
+                <div class="ml-auto mt-1 sm:hidden" id="menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="rgb(75 85 99)">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </div>
+                <ul class="hidden sm:flex flex-col items-end gap-3 mt-3" id="menu-list">
+                    <li>
+                        <a href="#" class="flex items-center gap-3 pr-2 border-r-4 border-orange border-opacity-90">
+                            <span class="text-gray-600">Home</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(75 85 99)">
+                                <path
+                                    d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center gap-3 pr-2 border-r-4 border-transparent border-opacity-90">
+                            <span>About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center gap-3 pr-2 border-r-4 border-transparent border-opacity-90">
+                            <span>Contact</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--End of navbar div-->
+
+        <main class="px-10 md:px-14 py-6 col-span-2">
+            <div class="flex justify-center sm:justify-end ">
+                <a href="#"
+                    class="text-xs text-red-400 uppercase tracking-wider font-semibold m-2 sm:border-2 transition ease-out duration-500 border-red-400 rounded-3xl py-2 px-3 hover:bg-red-400 hover:text-white ">
+                    Log in
+                </a>
+                <a href="#"
+                    class="text-xs text-red-400 uppercase tracking-wider font-semibold m-2 sm:border-2 transition ease-out duration-500 border-red-400 rounded-3xl py-2 px-3 hover:bg-red-400 hover:text-white ">
+                    Sign up
+                </a>
+            </div>
+
+            <header>
+                <h2 class="text-gray-600 text-4xl tracking-wider font-bold">
+                    Recipies
+                </h2>
+                <h3 class="text-lg tracking-wider">For Ninjas</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">Desi Recipies</h4>
+
+                <div class="mt-8 flex flex-col gap-y-5 sm:flex-row gap-x-5 overflow-x-auto pb-4 overscroll-x-contain">
+                    <!--Cards go here-->
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/singda.jpeg" alt="" class="mb-4 w-full h-40 sm:h-52 object-cover  md:" />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/dosa.jpeg" alt="" class="mb-4 w-full h-40 sm:h-52 object-cover" />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/gupchup.jpeg" alt="" class="mb-4 w-full h-40 sm:h-52 object-cover" />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/dhai-gupchup.jpeg" alt="" class="mb-4 w-full sm:h-52 h-40 object-cover" />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">Videshi Recipies</h4>
+
+                <div class="mt-8 flex flex-col gap-y-5 sm:flex-row gap-x-5 overflow-x-auto pb-4 overscroll-x-contain">
+                    <!--Cards go here-->
+
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/32 Creative Dumpling Recipes to Make On National Dumpling Day.jpeg" alt=""
+                            class="mb-4 w-full sm:h-52 object-cover h-40 " />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/Penne Arrabiata.jpeg" alt="" class="mb-4 w-full sm:h-52 object-cover h-40" />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/Sesame Chicken.jpeg" alt="" class="mb-4 w-full sm:h-52 object-cover h-40" />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white cursor-pointer rounded-lg overflow-hidden drop-shadow-md sm:w-52 shrink-0 relative hover:drop-shadow-lg">
+                        <img src="img/0c412014-e421-4ccf-aa6a-1a611d73a155.jpeg" alt=""
+                            class="mb-4 w-full sm:h-52 object-cover h-40" />
+                        <div>
+                            <span class="font-bold text-gray-600 px-3">5 bean chilli stew</span>
+                            <span class="block font-normal px-3 text-sm pb-5">Recipe by Mario</span>
+                        </div>
+                        <div
+                            class="flex items-center bg-gray-100 text-gray-500  py-1 px-2 rounded-2xl absolute top-0 text-xs font-extrabold mt-1 ml-1 opacity-85 gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px"
+                                fill="rgb(107 114 128)">
+                                <path
+                                    d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z" />
+                            </svg>
+                            <p>25 min</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center my-14">
+                    <div
+                        class="bg-peach-dark text-darkbrown px-4 py-1 rounded-2xl cursor-pointer transform transition ease-out duration-300 hover:scale-105  ">
+                        Load More</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--end of content wrapper-->
+    <script src="index.js"></script>
+</body>
+
+</html>
